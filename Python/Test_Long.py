@@ -61,6 +61,6 @@ cipher = EncryptBlock(plain, ln)
 hexDump(cipher)
 
 print("Decrypt")
-deciphered = EncryptBlock(cipher, ln)
+deciphered = DecryptBlock(cipher, len(cipher))
 hexDump(deciphered)
 
